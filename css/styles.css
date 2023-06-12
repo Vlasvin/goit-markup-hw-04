@@ -130,12 +130,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-dark);
   padding: 24px 0;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 .active {
   position: relative;
   color: var(--active-color);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 .active::after {
   content: "";
