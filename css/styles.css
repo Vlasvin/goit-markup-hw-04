@@ -307,7 +307,7 @@ img {
   margin-bottom: 8px;
 }
 .team-name {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .team-item-img {
   flex-basis: calc((100% - 24px) / 3);
@@ -321,9 +321,6 @@ img {
   color: var(--text-color);
   text-align: center;
   text-align: center;
-}
-.team-soc-box {
-  padding: 32px 0;
 }
 .team-soc {
   display: flex;
@@ -378,7 +375,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-dark);
-  padding-top: 72px;
+  margin-bottom: 72px;
 }
 .cust-list {
   display: flex;
@@ -400,11 +397,11 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--color-grey);
-  transition: var(--transition), border-color var(--transition);
+  transition: color var(--transition), border-color var(--transition);
 }
 .cust-link:hover,
 .cust-link:focus {
-  fill: var(--active-color);
+  color: var(--active-color);
   border-color: var(--active-color);
 }
 .cust-icon {
@@ -413,16 +410,21 @@ img {
 }
 
 /* -----------------------------FOOTER--------------------------- */
+.footer-container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   background-color: var(--color-dark);
   left: 0px;
   top: 2280px;
   padding: 100px 0;
-}
-
-.flex {
-  display: flex;
-  align-items: baseline;
 }
 .footer-position {
   margin-right: 120px;
@@ -515,7 +517,8 @@ img {
   border-radius: 4px;
   padding: 12px 24px 12px 24px;
   box-sizing: border-box;
-  transition: var(--transition);
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition), box-shadow var(--transition);
 }
 .button-portfolio:hover {
   color: var(--primary-color);
@@ -565,15 +568,19 @@ img {
   width: 360px;
   box-sizing: border-box;
   width: calc((100% - 48px) / 3);
-  transition: box-shadow var(--transition);
 }
 .portfolio-link {
   display: block;
+  transition: box-shadow var(--transition);
 }
 .portfolio-link:hover,
-.portfolio-link:focus .text {
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-link:hover,
+.portfolio-link:focus,
+text {
   transform: translateY(0%);
 }
 
@@ -662,5 +669,5 @@ img {
   pointer-events: none;
 }
 .modal-close {
-  transition: var(--transition);
+  transition: fill var(--transition);
 }
