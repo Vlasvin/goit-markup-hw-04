@@ -378,6 +378,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-dark);
+  margin-bottom: 72px;
 }
 .cust-list {
   display: flex;
@@ -387,7 +388,6 @@ img {
   width: 168px;
   height: 88px;
   border-radius: 4px;
-  margin-top: 72px;
 }
 .cust-link {
   width: 100%;
